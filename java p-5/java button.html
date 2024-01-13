@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>hello button</h1>
+<button id="click1" >click me</button>  
+
+<script>
+  var clickBtn = document.getElementById('click1');
+clickBtn.onclick= click;
+
+function click (){
+    document.body.style.backgroundColor='red'
+}
+
+var btn = document.getElementById('click1');
+btn.addEventListener('click', click);
+///
+// document.getElementById('click1').addEventListener('click',click)
+
+
+var btn2=document.getElementById('click1').addEventListener('click',function(){
+    document.body.style.color = 'chocolate'
+})
+</script>
+</body>
+</html>
